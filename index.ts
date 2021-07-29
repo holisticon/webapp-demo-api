@@ -14,7 +14,7 @@ server.get('/products', async (request, reply) => {
   });
 })
 
-server.listen(8080, (err, address) => {
+server.listen(process.env.PORT || 8080, (err, address) => {
   if (err) {
     console.error(err)
     process.exit(1)
