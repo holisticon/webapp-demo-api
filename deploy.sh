@@ -69,9 +69,10 @@ fi
 
 selectNodeVersion () {
   if [[ -n "$KUDU_SELECT_NODE_VERSION_CMD" ]]; then
-    SELECT_NODE_VERSION="$KUDU_SELECT_NODE_VERSION_CMD \"$DEPLOYMENT_SOURCE\" \"$DEPLOYMENT_TARGET\" \"$DEPLOYMENT_TEMP\""
-    eval $SELECT_NODE_VERSION
-    exitWithMessageOnError "select node version failed"
+    # This just crashes
+    # SELECT_NODE_VERSION="$KUDU_SELECT_NODE_VERSION_CMD \"$DEPLOYMENT_SOURCE\" \"$DEPLOYMENT_TARGET\" \"$DEPLOYMENT_TEMP\""
+    # eval $SELECT_NODE_VERSION
+    # exitWithMessageOnError "select node version failed"
 
     if [[ -e "$DEPLOYMENT_TEMP/__nodeVersion.tmp" ]]; then
       NODE_EXE=`cat "$DEPLOYMENT_TEMP/__nodeVersion.tmp"`
