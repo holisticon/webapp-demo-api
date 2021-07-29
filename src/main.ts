@@ -8,7 +8,7 @@ import * as methodOverride from 'method-override';
 import * as morgan from 'morgan';
 import { join } from 'path';
 import { AppModule } from './app/app.module';
-import { environment } from './environments/environment';
+import { environment } from './environment';
 
 async function bootstrap() {
     const app = await NestFactory.create<NestExpressApplication>(AppModule);
