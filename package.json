@@ -7,7 +7,7 @@
   "license": "UNLICENSED",
   "scripts": {
     "prebuild": "rimraf dist",
-    "build": "nest build && copyfiles src/assets/**/* dist/assets --up 2",
+    "build": "nest build",
     "start": "node dist/main",
     "start:dev": "nest start --watch",
     "start:debug": "nest start --debug --watch",
@@ -23,7 +23,6 @@
     "@nestjs/common": "^8.0.0",
     "@nestjs/core": "^8.0.0",
     "@nestjs/platform-express": "^8.0.0",
-    "copyfiles": "2.4.1",
     "date-fns": "2.23.0",
     "method-override": "3.0.0",
     "morgan": "1.10.0",
