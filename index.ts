@@ -3,6 +3,10 @@ import { products } from './products';
 
 const server = fastify();
 
+server.get('/', async (request, reply) => {
+  reply.send();
+})
+
 server.get('/products', async (request, reply) => {
   reply.send({
     totalResults: products.length,
