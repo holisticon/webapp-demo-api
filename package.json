@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "tsc -p tsconfig.json --outDir dist && copyfiles package*.json dist/"
+    "build": "tsc -p tsconfig.json",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
